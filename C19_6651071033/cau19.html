@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 19</title>
+</head>
+
+<body>
+
+    <h2>Câu 19</h2>
+
+    <script>
+        let tienGoc = Number(prompt("Nhập số tiền gốc:"));
+
+        let laiSuat = Number(
+            prompt("Nhập lãi suất hàng năm (%):")
+        );
+
+        let soNam = Number(
+            prompt("Nhập số năm:")
+        );
+
+        let tienLai = tienGoc * laiSuat / 100 * soNam;
+
+        let tongTien = tienGoc + tienLai;
+
+        alert(
+            "Tiền lãi = " + tienLai +
+            "\nTổng tiền sau " + soNam +
+            " năm = " + tongTien
+        );
+    </script>
+
+</body>
+
+</html>

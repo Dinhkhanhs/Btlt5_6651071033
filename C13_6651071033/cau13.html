@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 13</title>
+</head>
+
+<body>
+
+    <h2>Câu 13</h2>
+
+    <script>
+        function laSoNguyenTo(n) {
+            if (n < 2) {
+                return false;
+            }
+
+            for (let i = 2; i <= Math.sqrt(n); i++) {
+                if (n % i == 0) {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        let n = Number(prompt("Nhập số nguyên dương n:"));
+
+        let dem = 0;
+
+        for (let i = 2; i < n; i++) {
+            if (laSoNguyenTo(i)) {
+                dem++;
+            }
+        }
+
+        alert("Có " + dem + " số nguyên tố nhỏ hơn " + n);
+    </script>
+
+</body>
+
+</html>

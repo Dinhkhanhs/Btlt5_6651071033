@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 7</title>
+</head>
+
+<body>
+
+    <h2>Câu 7: Tìm ngày kế tiếp</h2>
+
+    <script>
+
+        let ngay = Number(prompt("Nhập ngày:"));
+        let thang = Number(prompt("Nhập tháng:"));
+        let nam = Number(prompt("Nhập năm:"));
+
+        let date = new Date(nam, thang - 1, ngay);
+
+        date.setDate(date.getDate() + 1);
+
+        let ngayMoi = date.getDate();
+        let thangMoi = date.getMonth() + 1;
+        let namMoi = date.getFullYear();
+
+        console.log(
+            "Ngày kế tiếp: " +
+            ngayMoi + "/" +
+            thangMoi + "/" +
+            namMoi
+        );
+
+    </script>
+
+</body>
+
+</html>

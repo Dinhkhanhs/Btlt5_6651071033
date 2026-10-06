@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 25</title>
+</head>
+
+<body>
+
+    <h2>THỰC ĐƠN</h2>
+
+    <form>
+
+        <table border="1">
+
+            <tr>
+                <th>Thức ăn</th>
+                <th>Nước uống</th>
+                <th>Thời điểm</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <select id="thucAn" multiple size="6">
+                        <option value="30000">Bánh bò</option>
+                        <option value="15000">Nui</option>
+                        <option value="12000">Gà hấp</option>
+                        <option value="13000">Chanh dây</option>
+                    </select>
+                </td>
+
+                <td>
+                    <select id="nuocUong" multiple size="6">
+                        <option value="12000">Cà phê đá</option>
+                        <option value="15000">Cà phê sữa đá</option>
+                        <option value="13000">Chanh dây</option>
+                        <option value="12000">Chanh muối</option>
+                        <option value="14000">Cam vắt</option>
+                    </select>
+                </td>
+
+                <td>
+                    <input type="radio" name="thoiDiem" value="ngay" checked>
+                    Ban ngày
+                    <br><br>
+
+                    <input type="radio" name="thoiDiem" value="dem">
+                    Ban đêm
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3" align="center">
+                    <button type="button" onclick="tinhTien()">
+                        Tính tiền
+                    </button>
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+    <h3>Các món đã dùng</h3>
+
+    <table border="1">
+        <tr>
+            <th>Món</th>
+            <th>Tiền</th>
+        </tr>
+
+        <tbody id="danhSach"></tbody>
+
+        <tr>
+            <td><b>Tổng tiền</b></td>
+            <td id="tongTien">0 đồng</td>
+        </tr>
+    </table>
+
+    <script src="cau25.js"></script>
+
+</body>
+
+</html>

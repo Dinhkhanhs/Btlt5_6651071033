@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 12</title>
+</head>
+
+<body>
+
+    <h2>Câu 12</h2>
+
+    <script>
+        function luyThua(b, n) {
+            let ketQua = 1;
+
+            for (let i = 1; i <= n; i++) {
+                ketQua = ketQua * b;
+            }
+
+            return ketQua;
+        }
+
+        let b = Number(prompt("Nhập b:"));
+        let n = Number(prompt("Nhập n:"));
+
+        alert(b + "^" + n + " = " + luyThua(b, n));
+    </script>
+
+</body>
+
+</html>

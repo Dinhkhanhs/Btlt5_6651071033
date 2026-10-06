@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 10</title>
+</head>
+
+<body>
+
+    <h2>Câu 10</h2>
+
+    <script>
+        let n = Number(prompt("Nhập số nguyên dương n:"));
+
+        let tong = 0;
+        let x = n;
+
+        while (x >= 1) {
+            tong += x;
+            x = Math.floor(x / 2);
+        }
+
+        alert("Tổng = " + tong);
+    </script>
+
+</body>
+
+</html>

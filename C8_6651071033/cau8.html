@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 8</title>
+</head>
+
+<body>
+
+    <h2>Câu 8: Đọc số có 2 chữ số</h2>
+
+    <script>
+
+        let n = Number(prompt("Nhập số nguyên có 2 chữ số:"));
+
+        if (n < 10 || n > 99) {
+
+            alert("Vui lòng nhập số có 2 chữ số!");
+
+        } else {
+
+            let hangChuc = Math.floor(n / 10);
+            let hangDonVi = n % 10;
+
+            let so = [
+                "không",
+                "một",
+                "hai",
+                "ba",
+                "bốn",
+                "năm",
+                "sáu",
+                "bảy",
+                "tám",
+                "chín"
+            ];
+
+            let ketQua = "";
+
+            if (hangChuc == 1) {
+
+                ketQua = "Mười";
+
+                if (hangDonVi != 0) {
+
+                    if (hangDonVi == 5) {
+                        ketQua += " lăm";
+                    } else {
+                        ketQua += " " + so[hangDonVi];
+                    }
+
+                }
+
+            } else {
+
+                ketQua = so[hangChuc] + " mươi";
+
+                if (hangDonVi != 0) {
+
+                    if (hangDonVi == 1) {
+                        ketQua += " mốt";
+                    } else if (hangDonVi == 5) {
+                        ketQua += " lăm";
+                    } else {
+                        ketQua += " " + so[hangDonVi];
+                    }
+
+                }
+
+            }
+
+            alert(ketQua);
+
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 15</title>
+</head>
+
+<body>
+
+    <h2>Câu 15</h2>
+
+    <p id="ketqua"></p>
+
+    <script>
+        let User = {
+            Name: "Max",
+            Age: 20
+        };
+
+        // a) In thông tin ban đầu
+        let ketQua = "";
+
+        ketQua += "Thông tin ban đầu:<br>";
+        ketQua += "Name: " + User.Name + "<br>";
+        ketQua += "Age: " + User.Age + "<br><br>";
+
+        // b) Thêm thuộc tính Surname
+        User.Surname = "Lee";
+
+        // c) Thay đổi Age thành 30
+        User.Age = 30;
+
+        ketQua += "Thông tin sau khi thay đổi:<br>";
+        ketQua += "Name: " + User.Name + "<br>";
+        ketQua += "Surname: " + User.Surname + "<br>";
+        ketQua += "Age: " + User.Age;
+
+        document.getElementById("ketqua").innerHTML = ketQua;
+    </script>
+
+</body>
+
+</html>

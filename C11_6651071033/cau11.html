@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 11</title>
+</head>
+
+<body>
+
+    <h2>Câu 11</h2>
+
+    <script>
+        function daoNguoc(n) {
+            let ketQua = 0;
+
+            while (n > 0) {
+                let chuSo = n % 10;
+                ketQua = ketQua * 10 + chuSo;
+                n = Math.floor(n / 10);
+            }
+
+            return ketQua;
+        }
+
+        let n = Number(prompt("Nhập một số nguyên:"));
+
+        alert("Số đảo ngược là: " + daoNguoc(n));
+    </script>
+
+</body>
+
+</html>

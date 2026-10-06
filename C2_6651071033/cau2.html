@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 2</title>
+</head>
+
+<body>
+
+    <h2>Câu 2: Kiểm tra năm nhuận</h2>
+
+    <script>
+
+        let nam = Number(prompt("Nhập năm:"));
+
+        if (nam % 400 == 0 || (nam % 4 == 0 && nam % 100 != 0)) {
+            alert(nam + " là năm nhuận");
+        } else {
+            alert(nam + " không phải là năm nhuận");
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 9</title>
+</head>
+
+<body>
+
+    <h2>Câu 9: Viết hoa chữ cái đầu mỗi từ</h2>
+
+    <script>
+
+        let chuoi = prompt("Nhập một chuỗi:");
+
+        let mangTu = chuoi.split(" ");
+
+        for (let i = 0; i < mangTu.length; i++) {
+
+            if (mangTu[i].length > 0) {
+
+                mangTu[i] =
+                    mangTu[i].charAt(0).toUpperCase()
+                    + mangTu[i].slice(1);
+
+            }
+
+        }
+
+        let ketQua = mangTu.join(" ");
+
+        alert(ketQua);
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 16</title>
+</head>
+
+<body>
+
+    <h2>Câu 16</h2>
+
+    <p id="ketqua"></p>
+
+    <script>
+        let HinhTru = {
+            radius: 10,
+            height: 15
+        };
+
+        // a) In thông tin
+        let ketQua = "";
+
+        ketQua += "Bán kính: " + HinhTru.radius + "<br>";
+        ketQua += "Chiều cao: " + HinhTru.height + "<br><br>";
+
+        // b) Cập nhật height = 30
+        HinhTru.height = 30;
+
+        // Diện tích toàn phần
+        let dienTich =
+            2 * Math.PI * HinhTru.radius * HinhTru.radius +
+            2 * Math.PI * HinhTru.radius * HinhTru.height;
+
+        ketQua += "Chiều cao mới: " + HinhTru.height + "<br>";
+        ketQua += "Diện tích toàn phần = " + dienTich.toFixed(2);
+
+        document.getElementById("ketqua").innerHTML = ketQua;
+    </script>
+
+</body>
+
+</html>
